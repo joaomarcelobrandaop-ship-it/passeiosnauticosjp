@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- PRÉVIA de prospecção (noindex). Botões no WhatsApp DO DONO. Gerado por build_site.py. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Aluguel de lancha em João Pessoa: 18 lanchas de 7 a 13 pessoas | Passeios Náuticos JP</title>
+<meta name="description" content="Lanchas com marinheiro para 7 a 13 pessoas em João Pessoa. Fotos, lotação e o que tem a bordo de cada uma. Consulte pelo WhatsApp.">
+<link rel="icon" href="logo.png">
+<link rel="preload" href="fontes/anton.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fontes/nunito.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+:root{
+  --deep:#006FCC; --mar:#0089EA; --mar2:#0199FE; --agua:#0199FE;
+  --coral:#F0B04C; --coral-esc:#B07A1E; --espuma:#FDFDFE; --areia:#E3F2FF;
+  --ink:#0A1F33; --cinza:#4A5B6B; --sombra:0 12px 32px rgba(0,58,112,.14);
+  --radius:18px; --f-display:'Anton',sans-serif; --f-body:'Nunito Sans',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--f-body);font-size:16px;line-height:1.6;color:var(--ink);background:var(--espuma);overflow-x:hidden}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;line-height:1.12;letter-spacing:.3px}
+.wrap{width:min(1120px,92%);margin-inline:auto}
+.sec{padding:64px 0}
+.kicker{display:inline-block;font-weight:800;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);background:rgba(11,12,13,.05);border:1px solid rgba(11,12,13,.25);padding:6px 14px;border-radius:999px;margin-bottom:14px}
+.sec-title{font-size:clamp(1.6rem,4.4vw,2.4rem);margin-bottom:10px}
+.sec-sub{color:var(--cinza);max-width:660px;margin-bottom:34px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 26px;border-radius:999px;font-weight:800;font-size:1rem;text-decoration:none;border:0;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
+.btn:active{transform:scale(.97)}
+.btn-wa{background:var(--coral);color:#fff;box-shadow:0 8px 22px rgba(176,122,30,.32)}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(176,122,30,.42)}
+.btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.55)}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn-line{background:transparent;color:var(--mar);border:2px solid var(--agua)}
+.btn-line:hover{background:rgba(1,153,254,.12)}
+.ico-wa{width:20px;height:20px;flex:0 0 20px}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+.fill-mark{background:#FFF3C4;border:1.5px dashed #D9A600;border-radius:8px;padding:2px 8px;font-weight:700;color:#7A5C00;font-size:.85em}
+
+/* ===== LOADER: lancha balançando ===== */
+#loader{position:fixed;inset:0;z-index:9999;background:var(--deep);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;transition:opacity .45s ease}
+#loader.done{opacity:0;pointer-events:none}
+.sea-stage{position:relative;width:240px;height:160px;overflow:hidden}
+.boatload{position:absolute;left:50%;top:40px;width:120px;margin-left:-60px;animation:bob 1.7s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-2.5deg)}50%{transform:translateY(9px) rotate(2.5deg)}}
+.bub{position:absolute;bottom:8px;border-radius:50%;border:1.6px solid rgba(207,232,242,.6);animation:up 3s linear infinite}
+@keyframes up{to{transform:translateY(-150px);opacity:0}}
+.waterline{position:absolute;top:104px;left:0;width:200%;height:3px;background:repeating-linear-gradient(90deg,rgba(207,232,242,.5) 0 16px,transparent 16px 30px);animation:drift 2.2s linear infinite}
+@keyframes drift{to{transform:translateX(-46px)}}
+#loader p{font-family:var(--f-display);color:#D9DDDF;font-size:.95rem;letter-spacing:.06em}
+
+/* ===== HEADER ===== */
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(0,58,112,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;height:70px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}
+.brand svg{width:34px;height:34px}
+.brand b{font-family:var(--f-display);font-weight:400;font-size:1.32rem;letter-spacing:.1em;white-space:nowrap}
+.menu{display:none;gap:22px;list-style:none}
+.menu a{text-decoration:none;font-weight:700;color:#DCE9EF;font-size:.95rem}
+.menu a:hover{color:var(--coral)}
+.nav .btn{min-height:44px;padding:10px 16px;font-size:.9rem}
+.nav-wa-label{display:none}
+.langsw{display:inline-flex;border:1px solid rgba(255,255,255,.3);border-radius:999px;overflow:hidden}
+.langsw button{background:transparent;border:0;color:#DCE9EF;font:inherit;font-weight:800;font-size:.72rem;letter-spacing:.03em;padding:7px 8px;cursor:pointer;line-height:1;transition:background .15s}
+.langsw button.on{background:#fff;color:var(--deep)}
+.burger{display:inline-flex;flex-direction:column;gap:5px;background:none;border:0;padding:10px;cursor:pointer}
+.burger span{width:24px;height:2.6px;background:#fff;border-radius:3px}
+.mobile-menu{position:fixed;top:70px;left:0;right:0;background:var(--deep);border-bottom:1px solid rgba(255,255,255,.1);padding:10px 4% 22px;display:none;z-index:99}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:14px 6px;font-weight:700;color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.08)}
+@media(min-width:960px){.menu{display:flex}.burger{display:none}.nav-wa-label{display:inline}}
+
+/* ===== HERO ===== */
+.hero{position:relative;min-height:94vh;display:flex;align-items:center;color:#fff;overflow:hidden;padding-top:70px;background:linear-gradient(180deg,#006FCC 0%,#0089EA 55%,#0199FE 100%)}
+.hero-bg{position:absolute;inset:0}
+.hero-bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,58,112,.28) 0%,rgba(0,58,112,.66) 100%)}
+.hero-bg .sun{position:absolute;top:14%;right:15%;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,rgba(255,224,178,.5),rgba(255,224,178,.06) 62%,transparent 70%);animation:sunGlow 7s ease-in-out infinite}
+@keyframes sunGlow{0%,100%{transform:scale(1);opacity:.7}50%{transform:scale(1.1);opacity:1}}
+.hero-bg .cloud{position:absolute;height:16px;width:120px;background:rgba(255,255,255,.09);border-radius:20px;filter:blur(3px)}
+.hero-bg .cloud::before{content:"";position:absolute;width:48px;height:48px;border-radius:50%;background:inherit;top:-22px;left:18px}
+.hero-bg .cloud::after{content:"";position:absolute;width:34px;height:34px;border-radius:50%;background:inherit;top:-14px;right:22px}
+.hero-bg .c1{top:20%;left:-140px;animation:cloudDrift 48s linear infinite}
+.hero-bg .c2{top:33%;left:-140px;width:80px;opacity:.7;animation:cloudDrift 66s linear infinite;animation-delay:-30s}
+@keyframes cloudDrift{to{transform:translateX(calc(100vw + 200px))}}
+.hero-bg .gull{position:absolute;width:26px;opacity:.5}
+.hero-bg .gull svg{fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;animation:gullFlap 1.1s ease-in-out infinite}
+.hero-bg .g1{top:24%;left:12%;animation:gullDrift 34s linear infinite}
+.hero-bg .g2{top:30%;left:2%;width:18px;animation:gullDrift 44s linear infinite;animation-delay:-16s}
+.hero-bg .g2 svg{animation-duration:.9s}
+.hero-bg .g3{top:18%;left:26%;width:22px;animation:gullDrift 30s linear infinite;animation-delay:-22s}
+.hero-bg .g3 svg{animation-duration:1.25s}
+@keyframes gullFlap{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.5)}}
+@keyframes gullDrift{to{transform:translateX(72vw)}}
+.hero-bg .boat{position:absolute;right:12%;bottom:25%;width:172px;opacity:.8;animation:boatDrift 26s ease-in-out infinite}
+.hero-bg .boat svg{animation:boatBob 3.4s ease-in-out infinite;transform-origin:50% 72%}
+@keyframes boatBob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-7px) rotate(2deg)}}
+@keyframes boatDrift{0%,100%{transform:translateX(24px)}50%{transform:translateX(-26px)}}
+.hero-bg.has-video .sun,.hero-bg.has-video .cloud,.hero-bg.has-video .gull,.hero-bg.has-video .boat{display:none}
+.waves{position:absolute;left:0;right:0;bottom:-2px;height:110px;z-index:3;pointer-events:none;overflow:hidden}
+.waves svg{position:absolute;bottom:0;left:0;width:200%;height:100%}
+.w1{animation:wave 9s linear infinite;opacity:.5}
+.w2{animation:wave 6s linear infinite reverse;opacity:.8}
+@keyframes wave{to{transform:translateX(-50%)}}
+.hero-content{position:relative;z-index:4;padding:70px 0 150px;max-width:760px}
+.hero-badge{display:inline-flex;align-items:center;gap:9px;background:#fff;color:var(--deep);font-weight:800;font-size:.82rem;padding:8px 16px;border-radius:999px;margin-bottom:18px;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+.hero-badge svg{width:18px;height:18px}
+.hero-content h1{font-size:clamp(2rem,6vw,3.7rem);margin:6px 0 16px;text-transform:uppercase}
+.hero-content h1 .hl{color:#fff;text-decoration:underline wavy rgba(255,255,255,.65) 3px;text-underline-offset:10px}
+.hero-content p.lead{font-size:clamp(1rem,2.3vw,1.18rem);color:rgba(255,255,255,.9);max-width:600px;margin-bottom:28px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+
+/* ===== PROVA SOCIAL ===== */
+.proofbar{position:relative;z-index:5;margin-top:-78px}
+.proof-card{display:grid;grid-template-columns:1fr;gap:18px;background:#fff;border-radius:var(--radius);box-shadow:var(--sombra);padding:26px 28px;text-decoration:none}
+.proof-item{display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px}
+.stars{display:flex;gap:3px}.stars svg{width:22px;height:22px}
+.proof-big{font-size:1.5rem;font-weight:400;font-family:var(--f-display);color:var(--ink);line-height:1.1}
+.proof-lbl{font-size:.85rem;color:var(--cinza);font-weight:600}
+.proof-div{display:none;width:1px;background:rgba(18,36,48,.1)}
+@media(min-width:780px){.proofbar .proof-card{grid-template-columns:auto 1px auto 1px auto 1px auto;justify-content:center;align-items:center;gap:30px}.proof-div{display:block;height:54px}}
+
+/* ===== PASSEIOS ===== */
+#saidas{background:var(--espuma)}
+.trips{display:grid;grid-template-columns:1fr;gap:18px}
+@media(min-width:700px){.trips{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.trips{grid-template-columns:repeat(4,1fr)}}
+.trip{position:relative;background:#fff;border-radius:var(--radius);box-shadow:var(--sombra);overflow:hidden;display:flex;flex-direction:column}
+.trip-top{position:relative;padding:26px 22px 20px;color:#fff;min-height:130px;display:flex;flex-direction:column;justify-content:flex-end}
+.trip-top.has-photo{min-height:188px}
+.trip-top h3,.trip-top .esp{text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.trip-top .esp{font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.85);margin-bottom:6px}
+.trip-top h3{font-size:1.2rem;text-transform:uppercase}
+.trip-top .t-ico{position:absolute;top:16px;right:16px;width:42px;height:42px;opacity:.92}
+.trip-tag{position:absolute;top:16px;left:16px;background:#fff;color:var(--deep);font-size:.68rem;font-weight:800;letter-spacing:.08em;padding:4px 11px;border-radius:999px;text-transform:uppercase}
+.trip-body{padding:18px 22px 22px;display:flex;flex-direction:column;gap:12px;flex:1}
+.trip-meta{display:flex;flex-wrap:wrap;gap:8px}
+.trip-meta span{font-size:.76rem;font-weight:700;color:var(--ink);background:rgba(11,12,13,.05);border:1px solid rgba(11,12,13,.18);padding:4px 10px;border-radius:999px}
+.trip-price{margin-top:auto}
+.trip-price .val{font-family:var(--f-display);font-size:1.3rem;color:var(--ink)}
+.trip-price small{display:block;color:var(--cinza);font-weight:600;font-size:.8rem}
+.trip .btn{width:100%;min-height:48px;font-size:.92rem}
+
+/* ===== NOSSA FROTA ===== */
+#frota{background:#fff}
+.fleet{display:grid;grid-template-columns:1fr;gap:18px}
+@media(min-width:600px){.fleet{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.fleet{grid-template-columns:repeat(4,1fr)}}
+.boat-card{background:#fff;border:1px solid rgba(18,36,48,.08);border-radius:var(--radius);box-shadow:var(--sombra);overflow:hidden;display:flex;flex-direction:column}
+.boat-photo{position:relative;aspect-ratio:4/3;background:linear-gradient(150deg,var(--mar),var(--mar2));display:flex;align-items:center;justify-content:center;overflow:hidden}
+.boat-photo img{width:100%;height:100%;object-fit:cover}
+.boat-photo .ph{width:66px;height:46px}
+.boat-photo .ph-note{position:absolute;bottom:8px;left:8px;font-size:.72em}
+.boat-nota{position:absolute;top:10px;right:10px;background:var(--coral);color:#fff;font-size:.64rem;font-weight:800;padding:4px 9px;border-radius:999px;text-transform:uppercase;letter-spacing:.05em}
+.boat-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:11px;flex:1}
+.boat-body h3{font-size:1.12rem;text-transform:uppercase}
+.boat-cap{font-weight:700;color:var(--cinza);font-size:.88rem}
+.boat-itens{display:flex;flex-wrap:wrap;gap:6px}
+.boat-itens span{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;font-weight:700;color:var(--mar);background:rgba(1,153,254,.08);padding:4px 9px;border-radius:999px}
+.boat-itens svg{width:14px;height:14px;flex:0 0 14px}
+.boat-card .btn{width:100%;min-height:46px;font-size:.9rem;margin-top:auto}
+
+/* ===== A BORDO / TRIPULAÇÃO ===== */
+#guia{background:#fff}
+.guia-grid{display:grid;gap:30px;align-items:center}
+@media(min-width:880px){.guia-grid{grid-template-columns:.9fr 1.1fr}}
+.guia-art{background:linear-gradient(160deg,var(--mar) 0%,var(--mar2) 100%);border-radius:var(--radius);color:#fff;padding:34px;position:relative;overflow:hidden;min-height:300px;display:flex;flex-direction:column;justify-content:flex-end}
+.guia-art .g-badge{position:absolute;top:20px;left:20px;background:#fff;color:var(--deep);font-weight:800;font-size:.75rem;padding:6px 12px;border-radius:999px}
+.guia-art h3{font-size:1.7rem;text-transform:uppercase}
+.guia-art p{color:rgba(255,255,255,.85);font-style:italic;margin-top:8px}
+.guia-pontos{list-style:none;display:grid;gap:14px;margin:18px 0 24px}
+.guia-pontos li{display:flex;gap:12px;align-items:flex-start;font-weight:600}
+.guia-pontos li::before{content:"✓";flex:0 0 24px;height:24px;border-radius:50%;background:rgba(1,153,254,.16);color:var(--coral-esc);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:.85rem;margin-top:2px}
+
+/* ===== INCLUSO ===== */
+#incluso{background:var(--areia)}
+.inc-grid{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:700px){.inc-grid{grid-template-columns:repeat(2,1fr)}}
+.inc{background:#fff;border-radius:14px;padding:20px;display:flex;gap:14px;align-items:flex-start;box-shadow:0 6px 18px rgba(0,58,112,.07)}
+.inc svg{width:30px;height:30px;flex:0 0 30px;stroke:var(--coral-esc)}
+.inc b{display:block;margin-bottom:2px}
+.inc p{font-size:.92rem;color:var(--cinza)}
+
+/* ===== DEPOIMENTOS ===== */
+.dep-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-bottom:26px}
+@media(min-width:860px){.dep-grid{grid-template-columns:repeat(3,1fr)}}
+.dep{background:#fff;border-radius:var(--radius);box-shadow:var(--sombra);padding:24px;display:flex;flex-direction:column}
+.dep .stars{margin-bottom:10px}
+.dep p{font-size:.95rem;margin-bottom:14px}
+.dep b{font-size:.9rem}.dep small{display:block;color:var(--cinza);font-weight:600}
+.dep .flag{font-size:1rem}
+
+/* ===== FAQ ===== */
+#faq{background:#fff}
+.faq-item{border-bottom:1px solid rgba(18,36,48,.1)}
+.faq-item button{width:100%;background:none;border:0;font:inherit;font-weight:800;color:var(--ink);text-align:left;padding:18px 40px 18px 4px;cursor:pointer;position:relative;font-size:1rem}
+.faq-item button::after{content:"+";position:absolute;right:8px;top:50%;transform:translateY(-50%);font-family:var(--f-display);font-size:1.2rem;color:var(--coral);transition:transform .25s}
+.faq-item.open button::after{transform:translateY(-50%) rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;color:var(--cinza)}
+.faq-item.open .faq-a{max-height:280px}
+.faq-a p{padding:0 4px 18px}
+
+/* ===== CONTATO ===== */
+#contato{background:var(--espuma)}
+.contato-grid{display:grid;gap:26px}
+@media(min-width:880px){.contato-grid{grid-template-columns:1.1fr .9fr}}
+.info-card{background:#fff;border-radius:var(--radius);box-shadow:var(--sombra);padding:28px}
+.info-card h3{font-family:var(--f-body);font-weight:800;font-size:1.05rem;margin:18px 0 6px;display:flex;align-items:center;gap:8px}
+.info-card h3:first-child{margin-top:0}
+.info-card h3 svg{width:20px;height:20px;stroke:var(--coral-esc)}
+.info-card p{color:var(--cinza)}
+.cta-final{background:linear-gradient(160deg,var(--deep),var(--mar2));border-radius:var(--radius);color:#fff;padding:34px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.cta-final h3{font-size:1.6rem;text-transform:uppercase}
+.cta-final p{color:rgba(255,255,255,.85)}
+.contato-botoes{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+.contato-botoes .btn{width:100%}
+.btn-branco{background:#fff;color:var(--deep)}
+
+/* ===== FOOTER + FLUTUANTE ===== */
+footer{background:var(--deep);color:rgba(255,255,255,.7);padding:34px 0;font-size:.9rem}
+.foot{display:flex;flex-direction:column;gap:8px;align-items:center;text-align:center}
+.foot b{font-family:var(--f-display);font-weight:400;letter-spacing:.1em;color:#fff;font-size:1.2rem}
+#wa-float{position:fixed;right:18px;bottom:18px;z-index:90;width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.35);text-decoration:none;animation:pulse 2.4s ease-in-out infinite}
+#wa-float svg{width:32px;height:32px}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none}
+  .faq-a{transition:none}
+}
+
+@font-face{font-family:'Anton';src:url(fontes/anton.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Nunito Sans';src:url(fontes/nunito.woff2) format('woff2');font-weight:400 800;font-display:swap}
+/* filtro da frota por número de pessoas */
+.chips{display:flex;gap:8px;overflow-x:auto;margin:-10px 0 24px;padding:4px 2px 8px;scrollbar-width:none}
+.chip{flex:0 0 auto;min-height:44px;padding:8px 18px;border-radius:999px;border:2px solid rgba(1,153,254,.18);background:#fff;color:var(--mar);font:inherit;font-weight:800;font-size:.92rem;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.chip small{font-weight:700;opacity:.65;margin-left:4px}
+.chip[aria-pressed=true]{background:var(--deep);border-color:var(--deep);color:#fff}
+.boat-card[hidden]{display:none}
+.boat-modelo{font-size:.82rem;color:var(--cinza);font-weight:700;margin-top:-6px}
+/* o dia no mar */
+#roteiro{background:var(--deep);color:#fff}
+#roteiro .kicker{color:#fff;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.3)}
+#roteiro .sec-sub{color:rgba(255,255,255,.78)}
+.rota{list-style:none;display:grid;gap:0;margin-top:6px}
+.rota li{position:relative;padding:0 0 26px 34px}
+.rota li::before{content:"";position:absolute;left:7px;top:10px;bottom:-6px;width:2px;background:rgba(255,255,255,.22)}
+.rota li:last-child::before{display:none}
+.rota li::after{content:"";position:absolute;left:0;top:4px;width:16px;height:16px;border-radius:50%;background:var(--deep);box-shadow:inset 0 0 0 3px rgba(255,255,255,.5)}
+.rota li.parada::after{background:var(--coral);box-shadow:none}
+.rota small{display:block;font-weight:800;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.rota h3{font-size:1.25rem;text-transform:uppercase;margin:2px 0 4px}
+.rota li.parada h3{color:var(--coral)}
+.rota p{color:rgba(255,255,255,.8);font-size:.95rem}
+.rota-foto{aspect-ratio:4/3;border-radius:12px;overflow:hidden;margin-bottom:12px;background:rgba(255,255,255,.08)}
+.rota-foto img{width:100%;height:100%;object-fit:cover}
+.rota-nota{margin-top:6px;color:rgba(255,255,255,.7);font-size:.9rem}
+@media(min-width:1000px){.rota{grid-template-columns:repeat(6,1fr);gap:18px}.rota li{padding:34px 0 0}.rota li::before{left:8px;right:-18px;top:7px;bottom:auto;width:auto;height:2px}.rota li::after{top:0}}
+/* kits de churrasco */
+.kit-preco{font-family:var(--f-display);font-size:1.3rem;color:var(--coral-esc);margin-left:6px}
+.guia-foto{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3}
+.guia-foto img{width:100%;height:100%;object-fit:cover}
+.trip-top.has-photo{min-height:200px}
+.burger{min-width:44px;min-height:44px;justify-content:center;align-items:center}
+#loader.done{visibility:hidden;transition:opacity .45s ease,visibility 0s .45s}
+
+.brand img{width:44px;height:44px;border-radius:50%;flex:0 0 44px}
+@media(max-width:399px){.brand b{display:none}}
+.menu a{display:inline-flex;align-items:center;min-height:44px}
+.menu a[aria-current]{color:var(--coral)}
+.mobile-menu a[aria-current]{color:var(--coral)}
+.foot img{width:88px;height:88px;border-radius:50%;margin-bottom:6px}
+.foot nav{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 18px}
+.foot nav a{display:inline-flex;min-height:44px;align-items:center;color:rgba(255,255,255,.85)}
+/* topo das páginas internas */
+.page-hero{position:relative;padding:128px 0 72px;color:#fff;background:linear-gradient(180deg,#006FCC 0%,#0089EA 60%,#0199FE 100%);overflow:hidden}
+.page-hero h1{font-size:clamp(2rem,6vw,3.3rem);text-transform:uppercase;max-width:820px}
+.page-hero p.lead{color:rgba(255,255,255,.88);max-width:640px;margin:14px 0 26px;font-size:1.08rem}
+.migalha{font-size:.85rem;font-weight:700;color:rgba(255,255,255,.7);margin-bottom:14px}
+.migalha a{color:#fff}
+/* cartões dos barcos grandes */
+.lux{display:grid;gap:22px}
+@media(min-width:860px){.lux{grid-template-columns:repeat(2,1fr)}}
+.lux .boat-desc{color:var(--cinza);font-size:.95rem}
+.lux .boat-body h3{font-size:1.4rem}
+/* catamarã e jet ski */
+.lado{display:grid;gap:28px;align-items:center}
+@media(min-width:880px){.lado{grid-template-columns:1fr 1fr}.lado.inv>:first-child{order:2}}
+.lado .guia-foto{aspect-ratio:3/2}
+
+.btn-wa{color:#0A1F33}
+.btn-wa svg{fill:#0A1F33}
+.menu a:hover,.menu a[aria-current],.mobile-menu a[aria-current]{color:#fff;text-decoration:underline;text-underline-offset:6px}
+#frota,#faq{background:#FDFDFE}
+#guia{background:#E3F2FF}
+.boat-card,.trip,.info-card,.inc{background:#fff}
+.boat-itens span{color:#004F94;background:rgba(1,153,254,.12)}
+.chip[aria-pressed=true]{background:#006FCC;border-color:#006FCC}
+.kit-preco{color:#004F94}
+.rota li.parada::after{background:#F0B04C}
+.rota li.parada h3{color:#fff}
+.page-hero{background:linear-gradient(180deg,#0060B8 0%,#006FCC 100%)}
+.chip{color:#006FCC}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Passeios Náuticos JP, início">
+      <img src="img/logo-150.webp" width="44" height="44" alt="">
+      <b>PASSEIOS NÁUTICOS JP</b>
+    </a>
+    <ul class="menu"><li><a href="index.html">Início</a></li><li><a href="aluguel-de-lancha.html" aria-current=page>Lanchas</a></li><li><a href="iates-e-lanchas-grandes.html">Iates</a></li><li><a href="passeio-areia-vermelha.html">Areia Vermelha</a></li><li><a href="catamara-e-jet-ski.html">Catamarã e jet ski</a></li></ul>
+    <a class="btn btn-wa" data-wa="geral" href="https://wa.me/5583993025366"><svg class="ico-wa" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.8-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.7 1c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.3.7-.2.3.1 1.8.9 2.1 1 .3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg><span class="nav-wa-label">Reservar</span></a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-menu" id="mobileMenu"><a href="index.html">Início</a><a href="aluguel-de-lancha.html" aria-current=page>Lanchas</a><a href="iates-e-lanchas-grandes.html">Iates</a><a href="passeio-areia-vermelha.html">Areia Vermelha</a><a href="catamara-e-jet-ski.html">Catamarã e jet ski</a></nav>
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="migalha"><a href="index.html">Início</a> › Lanchas</p>
+    <h1>Aluguel de lancha em João Pessoa</h1>
+    <p class="lead">18 lanchas de 7 a 13 pessoas, todas com marinheiro. Escolha pelo tamanho do grupo e chame no WhatsApp: a mensagem já vai com o nome da lancha.</p>
+    <a class="btn btn-wa" data-wa="lanchas" href="https://wa.me/5583993025366"><svg class="ico-wa" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.8-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.7 1c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.3.7-.2.3.1 1.8.9 2.1 1 .3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg><span>Consultar uma data</span></a>
+  </div>
+
+</section>
+
+<section class="sec" id="frota">
+  <div class="wrap">
+    <span class="kicker">Nossa frota</span>
+    <h2 class="sec-title">Quantos vocês são?</h2>
+    <p class="sec-sub">A Capitania dos Portos conta toda pessoa a bordo, criança também. Para 14 pessoas ou mais, veja os <a href="iates-e-lanchas-grandes.html">iates e lanchas grandes</a>.</p>
+    <div class="chips" role="group" aria-label="Filtrar por número de pessoas"><button type="button" class="chip" data-filtro="todos" aria-pressed="true">Todas<small>18</small></button><button type="button" class="chip" data-filtro="ate9" aria-pressed="false">Até 9 pessoas<small>5</small></button><button type="button" class="chip" data-filtro="10a11" aria-pressed="false">10 a 11<small>9</small></button><button type="button" class="chip" data-filtro="12a13" aria-pressed="false">12 a 13<small>4</small></button></div>
+    <div class="fleet"><div class="boat-card" data-grupo="ate9"><div class="boat-photo"><img src="img/syssa-600.webp" srcset="img/syssa-400.webp 400w, img/syssa-600.webp 600w, img/syssa-800.webp 800w, img/syssa-900.webp 900w" sizes="(min-width:1000px) 262px, (min-width:600px) 44vw, 92vw" width="600" height="450" alt="Syssa Ventura 19.5" loading="lazy" decoding="async"></div><div class="boat-body"><h3>Syssa</h3><div class="boat-modelo">Ventura 19.5</div><div class="boat-cap">até 7 pessoas + marinheiro</div><div class="boat-itens"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/><path d="M9 17.5V6l11-2v11.5"/></svg>Som</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 15l-2 6M15 15l2 6M10.5 21h3"/></svg>Churrasqueira</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>Ducha de água doce</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10c3-4 15-4 18 0"/><path d="M5 10v9M19 10v9"/></svg>Toldo</span></div><a class="btn btn-wa" target="_blank" rel="noopener" data-msg="Olá! Vi a Syssa no site e queria saber o valor e as datas livres. Somos __ pessoas." href="https://wa.me/5583993025366">Consultar a Syssa</a></div></div><div class="boat-card" data-grupo="ate9"><div class="boat-photo"><img src="img/xamego-600.webp" srcset="img/xamego-400.webp 400w, img/xamego-600.webp 600w, img/xamego-800.webp 800w, img/xamego-1200.webp 1200w" sizes="(min-width:1000px) 262px, (min-width:600px) 44vw, 92vw" width="600" height="450" alt="Xamego FS 200" loading="lazy" decoding="async"></div><div class="boat-body"><h3>Xamego</h3><div class="boat-modelo">FS 200</div><div class="boat-cap">até 7 pessoas + marinheiro</div><div class="boat-itens"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15h16v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M6 15v-3a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v3"/></svg>Proa com estofado</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 15l-2 6M15 15l2 6M10.5 21h3"/></svg>Churrasqueira</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10c3-4 15-4 18 0"/><path d="M5 10v9M19 10v9"/></svg>Toldo</span></div><a class="btn btn-wa" target="_blank" rel="noopener" data-msg="Olá! Vi a Xamego no site e queria saber o valor e as datas livres. Somos __ pessoas." href="https://wa.me/5583993025366">Consultar a Xamego</a></div></div><div class="boat-card" data-grupo="ate9"><div class="boat-photo"><img src="img/mykonos-600.webp" srcset="img/mykonos-400.webp 400w, img/mykonos-600.webp 600w, img/mykonos-800.webp 800w, img/mykonos-1200.webp 1200w" sizes="(min-width:1000px) 262px, (min-width:600px) 44vw, 92vw" width="600" height="450" alt="Mykonos Lancha" loading="lazy" decoding="async"></div><div class="boat-body"><h3>Mykonos</h3><div class="boat-modelo">Lancha</div><div class="boat-cap">até 7 pessoas + marinheiro</div><div class="boat-itens"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 15l-2 6M15 15l2 6M10.5 21h3"/></svg>Churrasqueira</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>Ducha de água doce</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/><path d="M9 17.5V6l11-2v11.5"/></svg>Som</span></div><a class="btn btn-wa" target="_blank" rel="noopener" data-msg="Olá! Vi a Mykonos no site e queria saber o valor e as datas livres. Somos __ pessoas." href="https://wa.me/5583993025366">Consultar a Mykonos</a></div></div><div class="boat-card" data-grupo="ate9"><div class="boat-photo"><img src="img/cherokee-600.webp" srcset="img/cherokee-400.webp 400w, img/cherokee-600.webp 600w, img/cherokee-800.webp 800w, img/cherokee-1200.webp 1200w" sizes="(min-width:1000px) 262px, (min-width:600px) 44vw, 92vw" width="600" height="450" alt="Cherokee Lancha" loading="lazy" decoding="async"></div><div class="boat-body"><h3>Cherokee</h3><div class="boat-modelo">Lancha</div><div class="boat-cap">até 8 pessoas + marinheiro</div><div class="boat-itens"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15h16v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M6 15v-3a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v3"/></svg>Proa com estofado</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 15l-2 6M15 15l2 6M10.5 21h3"/></svg>Churrasqueira</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>Ducha de água doce</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10c3-4 15-4 18 0"/><path d="M5 10v9M19 10v9"/></svg>Toldo</span></div><a class="btn btn-wa" target="_blank" rel="noopener" data-msg="Olá! Vi a Cherokee no site e queria saber o valor e as datas livres. Somos __ pessoas." href="https://wa.me/5583993025366">Consultar a Cherokee</a></div></div><div class="boat-card" data-grupo="ate9"><div class="boat-photo"><img src="img/santorini-600.webp" srcset="img/santorini-400.webp 400w, img/santorini-600.webp 600w, img/santorini-800.webp 800w, img/santorini-1200.webp 1200w" sizes="(min-width:1000px) 262px, (min-width:600px) 44vw, 92vw" width="600" height="450" alt="Santorini Royal Mariner" loading="lazy" decoding="async"></div><div class="boat-body"><h3>Santorini</h3><div class="boat-modelo">Royal Mariner</div><div class="boat-cap">até 9 pessoas + marinheiro</div><div class="boat-itens"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 15l-2 6M15 15l2 6M10.5 21h3"/></svg>Churrasqueira</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>Ducha de água doce</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/><path d="M9 17.5V6l11-2v11.5"/></svg>Som</span></div><a class="btn btn-wa" target="_blank" rel="noopener" data-msg="Olá! Vi a Santorini no site e queria saber o valor e as datas livres. Somos __ pessoas." href="https://wa.me/5583993025366">Consultar a Santorini</a></div></div><div class="boat-card" data-grupo="10a11"><div class="boat-photo"><img src="img/shera-600.webp" srcset="img/shera-400.webp 400w, img/shera-600.webp 600w, img/shera-800.webp 800w, img/shera-1200.webp 1200w" sizes="(min-width:1000px) 262px, (min-width:600px) 44vw, 92vw" width="600" height="450" alt="Shera Focker 255" loading="lazy" decoding="async"></div><div class="boat-body"><h3>Shera</h3><div class="boat-modelo">Focker 255</div><div class="boat-cap">até 10 pessoas + marinheiro</div><div class="boat-itens"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h16v2a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M6 13V6a2 2 0 0 1 4 0"/><path d="M8 6h3"/></svg>Banheiro</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 15l-2 6M15 15l2 6M10.5 21h3"/></svg>Churrasqueira</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/><path d="M9 17.5V6l11-2v11.5"/></svg>Som</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>Ducha de água doce</span></div><a class="btn btn-wa" target="_blank" rel="noopener" data-msg="Olá! Vi a Shera no site e queria saber o valor e as datas livres. Somos __ pessoas." href="https://wa.me/5583993025366">Consultar a Shera</a></div></div><div class="boat-card" data-grupo="10a11"><div class="boat-photo"><img src="img/alvorada-600.webp" srcset="img/alvorada-400.webp 400w, img/alvorada-600.webp 600w, img/alvorada-800.webp 800w, img/alvorada-1131.webp 1131w" sizes="(min-width:1000px) 262px, (min-width:600px) 44vw, 92vw" width="600" height="450" alt="Alvorada Focker 255" loading="lazy" decoding="async"></div><div class="boat-body"><h3>Alvorada</h3><div class="boat-modelo">Focker 255</div><div class="boat-cap">até 10 pessoas + marinheiro</div><div class="boat-itens"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h16v2a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M6 13V6a2 2 0 0 1 4 0"/><path d="M8 6h3"/></svg>Banheiro</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 15l-2 6M15 15l2 6M10.5 21h3"/></svg>Churrasqueira</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/><path d="M9 17.5V6l11-2v11.5"/></svg>Som</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>Ducha de água doce</span></div><a class="btn btn-wa" target="_blank" rel="noopener" data-msg="Olá! Vi a Alvorada no site e queria saber o valor e as datas livres. Somos __ pessoas." href="https://wa.me/5583993025366">Consultar a Alvorada</a></div></div><div class="boat-card" data-grupo="10a11"><div class="boat-photo"><img src="img/revoada-600.webp" srcset="img/revoada-400.webp 400w, img/revoada-600.webp 600w, img/revoada-800.webp 800w, img/revoada-896.webp 896w" sizes="(min-width:1000px) 262px, (min-width:600px) 44vw, 92vw" width="600" height="450" alt="Revoada Focker 255" loading="lazy" decoding="async"></div><div class="boat-body"><h3>Revoada</h3><div class="boat-modelo">Focker 255</div><div class="boat-cap">até 10 pessoas + marinheiro</div><div class="boat-itens"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h16v2a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M6 13V6a2 2 0 0 1 4 0"/><path d="M8 6h3"/></svg>Banheiro</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 15l-2 6M15 15l2 6M10.5 21h3"/></svg>Churrasqueira</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/><path d="M9 17.5V6l11-2v11.5"/></svg>Som</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>Ducha de água doce</span></div><a class="btn btn-wa" target="_blank" rel="noopener" data-msg="Olá! Vi a Revoada no site e queria saber o valor e as datas livres. Somos __ pessoas." href="https://wa.me/5583993025366">Consultar a Revoada</a></div></div><div class="boat-card" data-grupo="10a11"><div class="boat-photo"><img src="img/surpresa-600.webp" srcset="img/surpresa-400.webp 400w, img/surpresa-600.webp 600w, img/surpresa-800.webp 800w, img/surpresa-1104.webp 1104w" sizes="(min-width:1000px) 262px, (min-width:600px) 44vw, 92vw" width="600" height="450" alt="Surpresa Staff" loading="lazy" decoding="async"></div><div class="boat-body"><h3>Surpresa</h3><div class="boat-modelo">Staff</div><div class="boat-cap">até 10 pessoas + marinheiro</div><div class="boat-itens"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15h16v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M6 15v-3a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v3"/></svg>Proa com estofado</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 15l-2 6M15 15l2 6M10.5 21h3"/></svg>Churrasqueira</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/><path d="M9 17.5V6l11-2v11.5"/></svg>Som</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>Ducha de água doce</span></div><a class="btn btn-wa" target="_blank" rel="noopener" data-msg="Olá! Vi a Surpresa no site e queria saber o valor e as datas livres. Somos __ pessoas." href="https://wa.me/5583993025366">Consultar a Surpresa</a></div></div><div class="boat-card" data-grupo="10a11"><div class="boat-photo"><img src="img/perola-negra-600.webp" srcset="img/perola-negra-400.webp 400w, img/perola-negra-600.webp 600w, img/perola-negra-720.webp 720w" sizes="(min-width:1000px) 262px, (min-width:600px) 44vw, 92vw" width="600" height="450" alt="Pérola Negra Magna 240" loading="lazy" decoding="async"></div><div class="boat-body"><h3>Pérola Negra</h3><div class="boat-modelo">Magna 240</div><div class="boat-cap">até 10 pessoas + marinheiro</div><div class="boat-itens"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15h16v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M6 15v-3a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v3"/></svg>Proa com estofado</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 15l-2 6M15 15l2 6M10.5 21h3"/></svg>Churrasqueira</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/><path d="M9 17.5V6l11-2v11.5"/></svg>Som</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>Ducha de água doce</span></div><a class="btn btn-wa" target="_blank" rel="noopener" data-msg="Olá! Vi a Pérola Negra no site e queria saber o valor e as datas livres. Somos __ pessoas." href="https://wa.me/5583993025366">Consultar a Pérola Negra</a></div></div><div class="boat-card" data-grupo="10a11"><div class="boat-photo"><img src="img/focker-222-600.webp" srcset="img/focker-222-400.webp 400w, img/focker-222-600.webp 600w, img/focker-222-800.webp 800w, img/focker-222-1170.webp 1170w" sizes="(min-width:1000px) 262px, (min-width:600px) 44vw, 92vw" width="600" height="450" alt="Focker 222" loading="lazy" decoding="async"></div><div class="boat-body"><h3>Focker 222</h3><div class="boat-cap">até 10 pessoas + marinheiro</div><div class="boat-itens"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15h16v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M6 15v-3a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v3"/></svg>Proa com estofado</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 15l-2 6M15 15l2 6M10.5 21h3"/></svg>Churrasqueira</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/><path d="M9 17.5V6l11-2v11.5"/></svg>Som</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>Ducha de água doce</span></div><a class="btn btn-wa" target="_blank" rel="noopener" data-msg="Olá! Vi a Focker 222 no site e queria saber o valor e as datas livres. Somos __ pessoas." href="https://wa.me/5583993025366">Consultar a Focker 222</a></div></div><div class="boat-card" data-grupo="10a11"><div class="boat-photo"><img src="img/pantufa-600.webp" srcset="img/pantufa-400.webp 400w, img/pantufa-600.webp 600w, img/pantufa-800.webp 800w, img/pantufa-1170.webp 1170w" sizes="(min-width:1000px) 262px, (min-width:600px) 44vw, 92vw" width="600" height="450" alt="Pantufa Focker 255" loading="lazy" decoding="async"></div><div class="boat-body"><h3>Pantufa</h3><div class="boat-modelo">Focker 255</div><div class="boat-cap">até 11 pessoas + marinheiro</div><div class="boat-itens"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h16v2a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M6 13V6a2 2 0 0 1 4 0"/><path d="M8 6h3"/></svg>Banheiro</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 15l-2 6M15 15l2 6M10.5 21h3"/></svg>Churrasqueira</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/><path d="M9 17.5V6l11-2v11.5"/></svg>Som</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>Ducha de água doce</span></div><a class="btn btn-wa" target="_blank" rel="noopener" data-msg="Olá! Vi a Pantufa no site e queria saber o valor e as datas livres. Somos __ pessoas." href="https://wa.me/5583993025366">Consultar a Pantufa</a></div></div><div class="boat-card" data-grupo="10a11"><div class="boat-photo"><img src="img/vida-vb-600.webp" srcset="img/vida-vb-400.webp 400w, img/vida-vb-600.webp 600w, img/vida-vb-800.webp 800w, img/vida-vb-1200.webp 1200w" sizes="(min-width:1000px) 262px, (min-width:600px) 44vw, 92vw" width="600" height="450" alt="Vida VB Alfa 300" loading="lazy" decoding="async"></div><div class="boat-body"><h3>Vida VB</h3><div class="boat-modelo">Alfa 300</div><div class="boat-cap">até 11 pessoas + marinheiro</div><div class="boat-itens"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15h16v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M6 15v-3a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v3"/></svg>Proa com estofado</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 15l-2 6M15 15l2 6M10.5 21h3"/></svg>Churrasqueira</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/><path d="M9 17.5V6l11-2v11.5"/></svg>Som</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>Ducha de água doce</span></div><a class="btn btn-wa" target="_blank" rel="noopener" data-msg="Olá! Vi a Vida VB no site e queria saber o valor e as datas livres. Somos __ pessoas." href="https://wa.me/5583993025366">Consultar a Vida VB</a></div></div><div class="boat-card" data-grupo="10a11"><div class="boat-photo"><img src="img/dida-600.webp" srcset="img/dida-400.webp 400w, img/dida-600.webp 600w, img/dida-768.webp 768w" sizes="(min-width:1000px) 262px, (min-width:600px) 44vw, 92vw" width="600" height="450" alt="Dida Focker 330" loading="lazy" decoding="async"></div><div class="boat-body"><h3>Dida</h3><div class="boat-modelo">Focker 330</div><div class="boat-cap">até 11 pessoas + marinheiro</div><div class="boat-itens"></div><a class="btn btn-wa" target="_blank" rel="noopener" data-msg="Olá! Vi a Dida no site e queria saber o valor e as datas livres. Somos __ pessoas." href="https://wa.me/5583993025366">Consultar a Dida</a></div></div><div class="boat-card" data-grupo="12a13"><div class="boat-photo"><img src="img/sniper-600.webp" srcset="img/sniper-400.webp 400w, img/sniper-600.webp 600w, img/sniper-800.webp 800w, img/sniper-1200.webp 1200w" sizes="(min-width:1000px) 262px, (min-width:600px) 44vw, 92vw" width="600" height="450" alt="Sniper Alfa 300" loading="lazy" decoding="async"></div><div class="boat-body"><h3>Sniper</h3><div class="boat-modelo">Alfa 300</div><div class="boat-cap">até 12 pessoas + marinheiro</div><div class="boat-itens"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15h16v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M6 15v-3a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v3"/></svg>Proa com estofado</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 15l-2 6M15 15l2 6M10.5 21h3"/></svg>Churrasqueira</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/><path d="M9 17.5V6l11-2v11.5"/></svg>Som</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>Ducha de água doce</span></div><a class="btn btn-wa" target="_blank" rel="noopener" data-msg="Olá! Vi a Sniper no site e queria saber o valor e as datas livres. Somos __ pessoas." href="https://wa.me/5583993025366">Consultar a Sniper</a></div></div><div class="boat-card" data-grupo="12a13"><div class="boat-photo"><img src="img/top-nails-600.webp" srcset="img/top-nails-400.webp 400w, img/top-nails-600.webp 600w, img/top-nails-800.webp 800w, img/top-nails-1200.webp 1200w" sizes="(min-width:1000px) 262px, (min-width:600px) 44vw, 92vw" width="600" height="450" alt="Top Nails NX 290" loading="lazy" decoding="async"></div><div class="boat-body"><h3>Top Nails</h3><div class="boat-modelo">NX 290</div><div class="boat-cap">até 12 pessoas + marinheiro</div><div class="boat-itens"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17v-4h18v4M3 17v2M21 17v2M6 13v-2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/><circle cx="8.5" cy="10.5" r="1"/></svg>Cabine</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h16v2a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M6 13V6a2 2 0 0 1 4 0"/><path d="M8 6h3"/></svg>Banheiro</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/><path d="M9 17.5V6l11-2v11.5"/></svg>Som</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>Ducha de água doce</span></div><a class="btn btn-wa" target="_blank" rel="noopener" data-msg="Olá! Vi a Top Nails no site e queria saber o valor e as datas livres. Somos __ pessoas." href="https://wa.me/5583993025366">Consultar a Top Nails</a></div></div><div class="boat-card" data-grupo="12a13"><div class="boat-photo"><img src="img/a-mare-600.webp" srcset="img/a-mare-400.webp 400w, img/a-mare-600.webp 600w, img/a-mare-800.webp 800w, img/a-mare-1200.webp 1200w" sizes="(min-width:1000px) 262px, (min-width:600px) 44vw, 92vw" width="600" height="450" alt="A Maré NX 290" loading="lazy" decoding="async"></div><div class="boat-body"><h3>A Maré</h3><div class="boat-modelo">NX 290</div><div class="boat-cap">até 12 pessoas + marinheiro</div><div class="boat-itens"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17v-4h18v4M3 17v2M21 17v2M6 13v-2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/><circle cx="8.5" cy="10.5" r="1"/></svg>Cabine</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h16v2a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M6 13V6a2 2 0 0 1 4 0"/><path d="M8 6h3"/></svg>Banheiro</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/><path d="M9 17.5V6l11-2v11.5"/></svg>Som</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>Ducha de água doce</span></div><a class="btn btn-wa" target="_blank" rel="noopener" data-msg="Olá! Vi a A Maré no site e queria saber o valor e as datas livres. Somos __ pessoas." href="https://wa.me/5583993025366">Consultar a A Maré</a></div></div><div class="boat-card" data-grupo="12a13"><div class="boat-photo"><img src="img/templaria-600.webp" srcset="img/templaria-400.webp 400w, img/templaria-600.webp 600w, img/templaria-800.webp 800w, img/templaria-1200.webp 1200w" sizes="(min-width:1000px) 262px, (min-width:600px) 44vw, 92vw" width="600" height="450" alt="Templária NHD 270" loading="lazy" decoding="async"></div><div class="boat-body"><h3>Templária</h3><div class="boat-modelo">NHD 270</div><div class="boat-cap">até 13 pessoas + marinheiro</div><div class="boat-itens"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h16v2a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M6 13V6a2 2 0 0 1 4 0"/><path d="M8 6h3"/></svg>Banheiro</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14l-7 8z"/><path d="M12 12v8M8 20h8"/></svg>Bar</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 15l-2 6M15 15l2 6M10.5 21h3"/></svg>Churrasqueira</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/><path d="M9 17.5V6l11-2v11.5"/></svg>Som</span></div><a class="btn btn-wa" target="_blank" rel="noopener" data-msg="Olá! Vi a Templária no site e queria saber o valor e as datas livres. Somos __ pessoas." href="https://wa.me/5583993025366">Consultar a Templária</a></div></div></div>
+  </div>
+</section>
+
+<section class="sec" id="incluso">
+  <div class="wrap guia-grid">
+    <div>
+      <span class="kicker">Churrasco a bordo</span>
+      <h2 class="sec-title">A carne já vai separada</h2>
+      <p class="sec-sub">A maioria das lanchas tem churrasqueira e kit de faca e tábua. Os kits de churrasco, com carne, carvão e sal, estão na página do <a href="passeio-areia-vermelha.html#incluso">passeio para Areia Vermelha</a>.</p>
+      <a class="btn btn-wa" data-wa="churrasco" href="https://wa.me/5583993025366"><svg class="ico-wa" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.8-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.7 1c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.3.7-.2.3.1 1.8.9 2.1 1 .3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg><span>Pedir o kit junto com a lancha</span></a>
+    </div>
+    <div class="guia-foto"><img src="img/churrasco-600.webp" srcset="img/churrasco-400.webp 400w, img/churrasco-600.webp 600w, img/churrasco-800.webp 800w, img/churrasco-958.webp 958w" sizes="(min-width:880px) 50vw, 92vw" width="600" height="450" alt="Marinheiro preparando o churrasco na popa da lancha Alvorada" loading="lazy" decoding="async"></div>
+  </div>
+</section>
+
+<section class="sec" id="contato">
+  <div class="wrap">
+    <div class="contato-grid">
+      <div class="info-card">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Ponto de embarque</h3>
+        <p>Marina da Praia do Jacaré, Cabedelo – PB</p>
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M4 12a8 8 0 0 1 16 0M12 4v8M8 20h8"/></svg>O que alugar</h3>
+        <p>Lanchas · Lanchas grandes e iates · Catamarã · Jet ski</p>
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>WhatsApp</h3>
+        <p>(83) 99302-5366</p>
+      </div>
+      <div class="cta-final">
+        <h3>Seu dia no mar começa aqui</h3>
+        <p>Mande a data e quantas pessoas. A mensagem já vai pronta.</p>
+        <div class="contato-botoes">
+          <a class="btn btn-branco" data-wa="final" href="https://wa.me/5583993025366"><svg class="ico-wa" viewBox="0 0 24 24" fill="#006FCC"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.8-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.7 1c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.3.7-.2.3.1 1.8.9 2.1 1 .3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg><span>Chamar no WhatsApp</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <img src="img/logo-150.webp" width="88" height="88" alt="Logo da Passeios Náuticos JP">
+    <b>PASSEIOS NÁUTICOS JP</b>
+    <span>Aluguel de lancha · João Pessoa e Cabedelo – PB</span>
+    <nav aria-label="Páginas"><a href="index.html">Início</a><a href="aluguel-de-lancha.html" aria-current=page>Lanchas</a><a href="iates-e-lanchas-grandes.html">Iates</a><a href="passeio-areia-vermelha.html">Areia Vermelha</a><a href="catamara-e-jet-ski.html">Catamarã e jet ski</a></nav>
+  </div>
+</footer>
+
+<a id="wa-float" data-wa="geral" href="https://wa.me/5583993025366" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.8-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.7 1c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.3.7-.2.3.1 1.8.9 2.1 1 .3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg></a>
+
+<script>
+/* ===================== CONFIG (dados editáveis) ===================== */
+const CONFIG = {
+  whatsapp: "5583993025366",   // número DO DONO
+  mensagens: {
+    geral: "Olá! Vi o site e queria alugar um barco. Data: __ · Pessoas: __",
+    lanchas: "Olá! Queria alugar uma lancha. Data: __ · Pessoas: __",
+    luxo: "Olá! Queria saber dos barcos grandes (14 a 20 pessoas). Data: __ · Pessoas: __",
+    areia: "Olá! Queria fazer o passeio para Areia Vermelha de lancha. Data: __ · Pessoas: __",
+    catamara: "Olá! Queria saber sobre o aluguel do catamarã: lotação, valor e datas livres.",
+    jetski: "Olá! Queria saber como funciona o aluguel do jet ski e o valor.",
+    guia: "Olá! Vi o site e queria tirar uma dúvida sobre o aluguel de lancha.",
+    churrasco: "Olá! Queria alugar um barco e já pedir o kit de churrasco. Data: __ · Pessoas: __",
+    final: "Olá! Queria consultar os barcos livres. Data: __ · Pessoas: __"
+  }
+};
+/* ============ INTEGRACOES (todas DESLIGADAS na prévia, regra 8) ============ */
+const INTEGRACOES = { GA4_ID: "", PIXEL_ID: "", FORMSPREE: "", PLANILHA_URL: "", AGENDA_URL: "" };
+
+(function(){
+  const $ = s => document.querySelector(s), $$ = s => document.querySelectorAll(s);
+  const reduz = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const link = m => "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(m);
+  $$("[data-wa]").forEach(a => { a.href = link(CONFIG.mensagens[a.dataset.wa] || CONFIG.mensagens.geral); a.target = "_blank"; a.rel = "noopener"; });
+  $$("[data-msg]").forEach(a => { a.href = link(a.dataset.msg); });
+  if (reduz) { const v = $("#heroBg video"); if (v) { v.removeAttribute("autoplay"); v.pause(); } }
+
+  const chips = $$(".chip"), barcos = $$(".boat-card[data-grupo]");
+  chips.forEach(c => c.addEventListener("click", () => {
+    const f = c.dataset.filtro;
+    chips.forEach(o => o.setAttribute("aria-pressed", o === c ? "true" : "false"));
+    barcos.forEach(b => b.hidden = !(f === "todos" || b.dataset.grupo === f));
+  }));
+
+  const mm = $("#mobileMenu"), burger = $("#burger");
+  burger.addEventListener("click", () => { const o = mm.classList.toggle("open"); burger.setAttribute("aria-expanded", o); });
+  $$('a[href^="#"]').forEach(a => a.addEventListener("click", ev => {
+    const id = a.getAttribute("href"); if (id.length < 2 || !document.querySelector(id)) return;
+    ev.preventDefault(); mm.classList.remove("open");
+    scrollTo({ top: document.querySelector(id).getBoundingClientRect().top + scrollY - 78, behavior: reduz ? "auto" : "smooth" });
+  }));
+  $$(".faq-item button").forEach(b => b.addEventListener("click", () => { const o = b.parentElement.classList.toggle("open"); b.setAttribute("aria-expanded", o); }));
+
+  const loader = $("#loader");
+  if (loader) { const t0 = performance.now(); const fecha = () => setTimeout(() => loader.classList.add("done"), reduz ? 0 : Math.max(0, 700 - (performance.now() - t0))); addEventListener("load", fecha); setTimeout(fecha, 2000); }
+})();
+</script>
+</body>
+</html>
